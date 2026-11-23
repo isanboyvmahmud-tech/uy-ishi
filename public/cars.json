@@ -1,0 +1,229 @@
+[
+  {
+    "id": 15,
+    "name": "Bugatti Chiron Super Sport",
+    "price": 12000000,
+    "seats": 2,
+    "desc": "1500 ot kuchi, 8.0L W16 Quad-Turbo, 420+ km/s — dunyoning eng tezkor giperkari!",
+    "image": "/bugatti.jpg",
+    "isVip": true
+  },
+  {
+    "id": 16,
+    "name": "Rolls-Royce Ghost",
+    "price": 7500000,
+    "seats": 5,
+    "desc": "Dunyodagi eng hashamatli va qulay super-sedan — mutlaq shohona tajriba.",
+    "image": "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=800&q=80",
+    "isVip": true
+  },
+  {
+    "id": 18,
+    "name": "Ferrari F8 Tributo",
+    "price": 6000000,
+    "seats": 2,
+    "desc": "720 ot kuchi, 0-100 km/s 2.9 soniya — afsonaviy italiyalik poyga ayg'iri!",
+    "image": "/ferrari.jpg",
+    "isVip": true
+  },
+  {
+    "id": 17,
+    "name": "Lamborghini Urus",
+    "price": 5000000,
+    "seats": 5,
+    "desc": "650 ot kuchi, 4.0L V8 Twin-Turbo — superkar kuchi va yo'ltanlamas qulayligi.",
+    "image": "/urus.jpg",
+    "isVip": true
+  },
+  {
+    "id": 19,
+    "name": "Porsche 911 GT3",
+    "price": 4200000,
+    "seats": 2,
+    "desc": "Mukammal aerodinamika, 510 ot kuchi — poyga treki va tezlik zavqi.",
+    "image": "/porsche.jpg",
+    "isVip": true
+  },
+  {
+    "id": 14,
+    "name": "BMW M5 F90",
+    "price": 2800000,
+    "seats": 5,
+    "desc": "625 ot kuchi, 0-100 km/s 3.3 soniya — qudrat, adrenalin va hashamat cho'qqisi!",
+    "image": "/m5.jpg",
+    "isVip": true
+  },
+  {
+    "id": 11,
+    "name": "Mercedes-Benz S-Class",
+    "price": 2200000,
+    "seats": 5,
+    "desc": "Haqiqiy lyuks darajasi — biznes uchrashuvlar va tadbirlar uchun eng oliy tanlov.",
+    "image": "/sclass.jpg",
+    "isVip": true
+  },
+  {
+    "id": 12,
+    "name": "BMW 7 Series",
+    "price": 2000000,
+    "seats": 5,
+    "desc": "Sportona kuch va oliy darajadagi hashamat uyg'unligi.",
+    "image": "/bmw7.jpg",
+    "isVip": true
+  },
+  {
+    "id": 10,
+    "name": "Tahoe",
+    "price": 1500000,
+    "seats": 7,
+    "desc": "7 o'rindiqli qudratli yo'ltanlamas, eng yuqori nufuz va qulaylik.",
+    "image": "/tahoe.jpg",
+    "isVip": true
+  },
+  {
+    "id": 13,
+    "name": "Matiz",
+    "plateNumber": "P 085 PB",
+    "color": "Qaymoq rang",
+    "price": 850000,
+    "seats": 4,
+    "desc": "Qaymoq rangli afsona! Davlat raqami: P085PB — eng tejamkor, tirbandlik bilmas va haqiqiy xalqona VIP!",
+    "image": "/matiz.jpg",
+    "isVip": true
+  },
+  {
+    "id": 2,
+    "name": "Malibu 2 ",
+    "price": 777000,
+    "seats": 5,
+    "desc": "Keng va yumshoq — uzoq yo'lga yaxshi.",
+    "image": "/malibu.jpg",
+    "isVip": true
+  },
+  {
+    "id": 1,
+    "name": "Cobalt",
+    "price": 280000,
+    "seats": 5,
+    "desc": "Tejamkor va ishonchli — shahar uchun qulay.",
+    "image": "/cobalt.jpg",
+    "isVip": false
+  },
+  {
+    "id": 5,
+    "name": "Gentra",
+    "price": 320000,
+    "seats": 5,
+    "desc": "Xalqona, yumshoq va juda qulay avtomobil.",
+    "image": "/gentra.jpg",
+    "isVip": false
+  },
+  {
+    "id": 6,
+    "name": "Onix",
+    "price": 370000,
+    "seats": 5,
+    "desc": "Zamonaviy turbo dvigatel, qulay va kam yoqilg'i sarflaydi.",
+    "image": "/onix.jpg",
+    "isVip": false
+  },
+  {
+    "id": 20,
+    "name": "Nexia 3",
+    "price": 250000,
+    "seats": 5,
+    "desc": "Shahar ichida chaqqon, tejamkor va juda qulay xalqona sedan.",
+    "image": "/nexia3.jpg",
+    "isVip": false
+  },
+  {
+    "id": 21,
+    "name": "Spark",
+    "price": 220000,
+    "seats": 4,
+    "desc": "Ixcham shahar xetchbegi — tirbandlik va tor joylar uchun juda qulay.",
+    "image": "/spark.jpg",
+    "isVip": false
+  },
+  {
+    "id": 22,
+    "name": "Damas",
+    "price": 200000,
+    "seats": 7,
+    "desc": "7 o'rindiqli xalqona miniven — yo'lovchi va yuk tashish uchun haqiqiy mehnatkash!",
+    "image": "/damas.webp",
+    "isVip": false
+  },
+  {
+    "id": 4,
+    "name": "Tracker",
+    "price": 400000,
+    "seats": 5,
+    "desc": "Baland krossover — tog'ga ham boradi.",
+    "image": "/tracker.jpg",
+    "isVip": false
+  },
+  {
+    "id": 23,
+    "name": "Chevrolet Monza",
+    "price": 420000,
+    "seats": 5,
+    "desc": "Zamonaviy dizayn, keng qulay salon va tejamkor harakat.",
+    "image": "/monza.jpg",
+    "isVip": false
+  },
+  {
+    "id": 24,
+    "name": "Hyundai Elantra",
+    "price": 480000,
+    "seats": 5,
+    "desc": "Futuristik uslub va yuqori darajadagi zamonaviy qulaylik.",
+    "image": "/elantra.jpg",
+    "isVip": false
+  },
+  {
+    "id": 25,
+    "name": "Kia Cerato",
+    "price": 450000,
+    "seats": 5,
+    "desc": "Dinamik yurish va mukammal koreys muhandisligi.",
+    "image": "/cerato.jpg",
+    "isVip": false
+  },
+  {
+    "id": 8,
+    "name": "Hyundai Sonata",
+    "price": 590000,
+    "seats": 5,
+    "desc": "Biznes klass sedan, silliq harakat va premium qulaylik.",
+    "image": "/sonata.jpg",
+    "isVip": false
+  },
+  {
+    "id": 9,
+    "name": "Kia Sportage",
+    "price": 560000,
+    "seats": 5,
+    "desc": "Xavfsiz va baland shahar SUV krossoveri.",
+    "image": "/sportage.jpg",
+    "isVip": false
+  },
+  {
+    "id": 7,
+    "name": "BYD Song Plus",
+    "price": 650000,
+    "seats": 5,
+    "desc": "Zamonaviy gibrid krossover, hashamatli salon va yuqori texnologiya.",
+    "image": "/byd.jpg",
+    "isVip": false
+  },
+  {
+    "id": 3,
+    "name": "Kia K5",
+    "price": 610000,
+    "seats": 5,
+    "desc": "Zamonaviy va tez — yo'lda hamma qaraydi.",
+    "image": "/k5.jpg",
+    "isVip": false
+  }
+]

@@ -1,0 +1,883 @@
+/* === Umumiy stillar === */
+body {
+  margin: 0;
+  background-color: #f8fafc;
+  color: #1e293b;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* === Navigatsiya menyusi (Header / Navbar) === */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2563eb;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link:hover {
+  color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.likes-indicator {
+  cursor: default;
+  color: #e11d48;
+  background-color: #fff1f2;
+}
+
+.likes-badge {
+  background-color: #e11d48 !important;
+}
+
+.bookings-btn {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.badge {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 9999px;
+}
+
+/* === Asosiy maydon === */
+.app-main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  box-sizing: border-box;
+}
+
+/* Yuklanish va xato holatlari */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  font-size: 24px;
+  font-weight: 500;
+  color: #2563eb;
+}
+
+.error-container {
+  text-align: center;
+  padding: 40px;
+  color: #ef4444;
+  font-size: 18px;
+}
+
+/* Sahifa sarlavhalari */
+.page-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.page-header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.page-header p {
+  font-size: 16px;
+  color: #64748b;
+  margin: 0 0 20px 0;
+}
+
+/* === Kategoriya filtrlari (Tabs) === */
+.category-filter-tabs {
+  display: inline-flex;
+  gap: 8px;
+  background: #f1f5f9;
+  padding: 6px;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.filter-tab-btn {
+  padding: 10px 18px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-tab-btn:hover {
+  color: #0f172a;
+}
+
+.filter-tab-btn.active {
+  background: #ffffff;
+  color: #2563eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.vip-filter-btn.active {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #f59e0b !important;
+}
+
+/* =========================================
+   === ⭐ VIP & PREMIUM BO'LIMI STILLARI ===
+   ========================================= */
+.vip-exclusive-section {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #1e293b 100%);
+  border-radius: 20px;
+  padding: 32px 24px;
+  margin-bottom: 48px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.25);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.vip-exclusive-section::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.vip-section-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.vip-badge-pill {
+  display: inline-block;
+  padding: 6px 16px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 9999px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+}
+
+.vip-section-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.vip-section-subtitle {
+  font-size: 15px;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* VIP Kartochkasi */
+.vip-car-card {
+  background: #ffffff !important;
+  border: 2px solid #f59e0b !important;
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.15) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.vip-car-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 32px rgba(245, 158, 11, 0.28) !important;
+}
+
+/* VIP Ribbon lenta */
+.vip-ribbon-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #f59e0b, #b45309);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+}
+
+.vip-crown {
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.vip-price {
+  color: #d97706 !important;
+  font-size: 22px !important;
+}
+
+.vip-detail-btn {
+  background: linear-gradient(135deg, #1e293b, #0f172a) !important;
+  color: #f59e0b !important;
+  border: 1px solid #f59e0b !important;
+}
+
+.vip-detail-btn:hover {
+  background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+  color: #ffffff !important;
+}
+
+.vip-submit-btn {
+  background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35) !important;
+}
+
+.vip-submit-btn:hover {
+  background: linear-gradient(135deg, #d97706, #b45309) !important;
+}
+
+.detail-vip-card {
+  border: 2px solid #f59e0b !important;
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.15) !important;
+}
+
+/* === Davlat raqami (License Plate) va Rang nishonlari === */
+.car-custom-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.license-plate {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #1e293b;
+  border-radius: 6px;
+  padding: 2px 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-family: 'Consolas', 'Courier New', monospace;
+  letter-spacing: 1px;
+}
+
+.plate-flag {
+  font-size: 13px;
+  margin-right: 6px;
+  border-right: 1px solid #cbd5e1;
+  padding-right: 4px;
+}
+
+.plate-text {
+  font-size: 13px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.color-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #854d0e;
+  background-color: #fef9c3;
+  border: 1px solid #fde047;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+/* Standart bo'lim sarlavhasi */
+.section-title-divider {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.section-title-divider h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: #0f172a;
+}
+
+.section-title-divider p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* === Bosh sahifa mashinalar to'ri (Grid) === */
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.car-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+  position: relative;
+}
+
+.car-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.car-image-box {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  background-color: #f1f5f9;
+  position: relative;
+}
+
+.car-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover .car-thumb {
+  transform: scale(1.05);
+}
+
+/* === Layk (Like) tugmasi stillari === */
+.like-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 5;
+  padding: 0;
+}
+
+.like-btn:hover {
+  transform: scale(1.15);
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.25);
+}
+
+.like-btn:active {
+  transform: scale(0.92);
+}
+
+.like-btn.liked {
+  background: #fff1f2;
+  border-color: #fecdd3;
+}
+
+.heart-icon {
+  font-size: 18px;
+  line-height: 1;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.like-btn.liked .heart-icon {
+  animation: heartPulse 0.35s ease;
+}
+
+@keyframes heartPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+.detail-like-btn {
+  top: 16px;
+  right: 16px;
+  width: 46px;
+  height: 46px;
+}
+
+.detail-like-btn .heart-icon {
+  font-size: 22px;
+}
+
+.car-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.liked-text-badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: #e11d48;
+  background-color: #ffe4e6;
+  padding: 2px 8px;
+  border-radius: 9999px;
+}
+
+.detail-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.like-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.like-pill-btn:hover {
+  background-color: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.like-pill-btn.active {
+  background-color: #fff1f2;
+  border-color: #fecdd3;
+  color: #e11d48;
+}
+
+.car-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: #0f172a;
+}
+
+.car-desc {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.car-meta {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 14px;
+}
+
+.car-price {
+  margin-top: auto;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.price-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.price-unit {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.view-detail-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 12px 16px;
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.view-detail-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* === /car/:id Sahifasi === */
+.car-detail-container {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.detail-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.detail-image-box {
+  width: 100%;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  background-color: #f1f5f9;
+  position: relative;
+}
+
+.detail-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: #0f172a;
+}
+
+.detail-desc {
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.detail-specs {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 16px;
+  background-color: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 8px;
+  margin-bottom: 28px;
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.spec-label {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.spec-value {
+  font-size: 16px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.price-text {
+  color: #10b981;
+}
+
+.calculator-section {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 24px;
+  margin-bottom: 28px;
+}
+
+.calculator-section h3 {
+  font-size: 18px;
+  margin: 0 0 16px 0;
+  color: #0f172a;
+}
+
+.days-counter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.counter-btn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.counter-btn:hover:not(:disabled) {
+  background-color: #e2e8f0;
+}
+
+.counter-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.days-display {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+  min-width: 70px;
+  text-align: center;
+}
+
+.total-price-box {
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.total-label {
+  font-size: 14px;
+  color: #065f46;
+  font-weight: 500;
+}
+
+.total-value {
+  font-size: 26px;
+  font-weight: 800;
+  color: #059669;
+}
+
+.calculation-formula {
+  font-size: 13px;
+  color: #047857;
+}
+
+.rent-submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.rent-submit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* === /bookings Sahifasi === */
+.bookings-container {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.bookings-empty {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.bookings-empty h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.bookings-empty p {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.booking-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.booking-car-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  color: #0f172a;
+}
+
+.booking-days {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.booking-days strong {
+  color: #0f172a;
+}
+
+.booking-price-box {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.booking-price-total {
+  font-size: 18px;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.booking-price-calc {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Umumiy hisob bloki */
+.bookings-summary-card {
+  background-color: #ffffff;
+  border: 2px solid #2563eb;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.total-highlight {
+  border-top: 1px solid #e2e8f0;
+  margin-top: 8px;
+  padding-top: 12px;
+}
+
+.summary-label {
+  font-size: 16px;
+  color: #475569;
+  font-weight: 500;
+}
+
+.summary-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.summary-total {
+  font-size: 24px;
+  font-weight: 800;
+  color: #2563eb;
+}
+
+.bookings-actions {
+  text-align: center;
+  margin-top: 20px;
+}

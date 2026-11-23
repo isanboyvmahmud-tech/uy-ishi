@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Cobalt",
+    "price": 280000,
+    "seats": 5,
+    "desc": "Tejamkor va ishonchli — shahar uchun qulay.",
+    "image": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Malibu 2 ",
+    "price": 777000,
+    "seats": 5,
+    "desc": "Keng va yumshoq — uzoq yo'lga yaxshi.",
+    "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Kia K5",
+    "price": 610000,
+    "seats": 5,
+    "desc": "Zamonaviy va tez — yo'lda hamma qaraydi.",
+    "image": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Tracker",
+    "price": 400000,
+    "seats": 5,
+    "desc": "Baland krossover — tog'ga ham boradi.",
+    "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Gentra",
+    "price": 320000,
+    "seats": 5,
+    "desc": "Xalqona, yumshoq va juda qulay avtomobil.",
+    "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Onix",
+    "price": 370000,
+    "seats": 5,
+    "desc": "Zamonaviy turbo dvigatel, qulay va kam yoqilg'i sarflaydi.",
+    "image": "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 7,
+    "name": "BYD Song Plus",
+    "price": 650000,
+    "seats": 5,
+    "desc": "Zamonaviy gibrid krossover, hashamatli salon va yuqori texnologiya.",
+    "image": "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Hyundai Sonata",
+    "price": 590000,
+    "seats": 5,
+    "desc": "Biznes klass sedan, silliq harakat va premium qulaylik.",
+    "image": "https://images.unsplash.com/photo-1555353540-64580b51c258?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 9,
+    "name": "Kia Sportage",
+    "price": 560000,
+    "seats": 5,
+    "desc": "Xavfsiz va baland shahar SUV krossoveri.",
+    "image": "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 10,
+    "name": "Tahoe",
+    "price": 1500000,
+    "seats": 7,
+    "desc": "7 o'rindiqli qudratli yo'ltanlamas, eng yuqori nufuz va qulaylik.",
+    "image": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80"
+  }
+]
